@@ -5,8 +5,8 @@
 
 <h1>Text Character prediction webapp</h1>
 <ol type="A">
-	<li>(Optional) Enter the number of epochs to train the model.</li>
-	<li>Select a model button.</li>
+	<li>(Optional) Enter the number of epochs to train the model (default=500).</li>
+	<li>Select a model definition, to perform alphabet character prediction.</li>
 	<li>Wait for the model to train, via the progress bar.</li>
 	<li>View the model loss and accuracy for the training data.</li>
 </ol>
@@ -19,13 +19,13 @@
 
 <th id="char_prediction_input">
 
-<h2>[Step 0] Input epoch (default=500) and select a button.</h2>
+<h2>[Step 0] (Optional) Enter the number of epochs to train the model (default=500).</h2>
 	
 <input id="epochs" type="text" value="" placeholder="epochs" rows="10" cols="100" style="display:block; text-align: left; width: 600px;">
 
 <br><br>
 
-<h2>[Step 1] Select a model definition, to perform Alphabet character prediction.</h2>
+<h2>[Step 1] Select a model definition.</h2>
   
 <h3>Model definition: LSTM - DENSE</h3>
 <button id="run_LSTM_char_prediction0" onclick="run_LSTM_char_prediction0()">(accuracy=0.5, epochs=1000) Run LSTM character prediction: 1 layer LSTM - 2 Dense layers</button>
@@ -45,7 +45,7 @@
 <!-- ---------------------------------------- -->
 
 <th id="char_prediction_output">
-<h3>[Step 2] View Results.</h3>
+<h2>[Step 2] View Results.</h2>
 <progress id="progress_bar" max="100" value="0" style="display:none">0%</progress>
 <br><br>
 <div id="data_display" style="display:block; text-align: left; width: 600px; height: 600px">
