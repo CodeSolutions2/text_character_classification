@@ -5,7 +5,5 @@ The purpose of this repository is to demonstrate character prediction of the alp
 [Current working version] https://codesolutions2.github.io/text_character_classification/index.html 
 
 
-Below is a figure of the results for the best performing model (3 layer LSTM - 1 Dense layer), that acheived accuracy of 0.78.
+Below is a figure of the results for the best performing model (3 layer LSTM - 1 Dense layer), that acheived accuracy of 0.78, for simplistic alphabet data.
 ![alt_text](best_model_accuracy_0_78.png)
-
-
