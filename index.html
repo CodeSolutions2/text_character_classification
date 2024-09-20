@@ -319,7 +319,7 @@ async function create_xs_ys() {
 			var stop = st + timesteps;
 			
 			// Separate train and test data
-			if (num_of_desired_predictions > batch_size-batch_size_test) {
+			if (num_of_desired_predictions > batch_size-batch_size_test-1) {
 				// Test data set
 				x_temp_test.push(temp_datappoints_arr.slice(st, stop-1));
 			} else {
@@ -333,11 +333,8 @@ async function create_xs_ys() {
 				}
 			}
 		}
-		console.log("x_train per feature: ", x_temp)
 		xs_3d_train.push(x_temp);
-		
 		ys_2d_train.push(y_temp);
-		console.log("y_train per feature: ", y_temp)
 		
 		xs_3d_test.push(x_temp_test);
 	}
